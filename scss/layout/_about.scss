@@ -1,0 +1,35 @@
+.about {
+  background: url('../../images/background-pic-3.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $color-primary-color;
+  background-blend-mode: multiply;
+  margin-top: -12rem;
+  padding-bottom: 10rem;
+  &__box {
+    padding-top: 12rem;
+    text-align: center;
+    color: $color-white-color;
+
+    &--image {
+      width: 24.8rem;
+      height: 24.8rem;
+      margin-top: 12rem;
+      border-radius: 100%;
+    }
+    &--text {
+      width: 40%;
+      margin: 3.5rem auto;
+      line-height: 150%;
+      font-size: 2.2rem;
+
+      @media screen and (max-width: $bp-large) {
+        width: 60%;
+      }
+    }
+    &--name {
+      text-transform: capitalize;
+      margin-bottom: 6.5rem;
+    }
+  }
+}

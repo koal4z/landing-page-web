@@ -1,0 +1,22 @@
+{
+  "name": "landing-page-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass scss/main.scss css/style.css -w",
+    "dev": "live-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.14.1",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.1.0"
+  }
+}

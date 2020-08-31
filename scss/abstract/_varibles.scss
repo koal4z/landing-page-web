@@ -1,0 +1,51 @@
+$color-primary-color: rgb(255, 127, 127);
+$color-bg-color: rgb(255, 242, 226);
+$color-front-color: rgb(204, 204, 204);
+$color-white-color: rgb(255, 255, 255);
+$color-box-shadow: 0 1.8rem 1.6rem rgba(0, 0, 0, 0.25);
+
+$font-primary: 'Montserrat', sans-serif;
+
+$bp-large-hd: 93.75em;
+$bp-medium-hd: 81.25em;
+$bp-largest-desktop: 75em;
+$bp-large: 62.5em;
+$bp-medium-large: 56.25rem;
+$bp-medium: 50em;
+$bp-small: 37.5em;
+
+$bp-h-larger-height: 64em;
+$bp-h-large: 48em;
+$bp-h-medium: 37.5em;
+
+//ipad
+$bp-w-ipad-vertical: 48em;
+$bp-h-ipad-vertical: 64em;
+$bp-w-ipad-horizontal: 64em;
+$bp-h-ipad-horizontal: 48em;
+/* @media screen and (max-width: $bp-w-ipad-vertical) and (max-height: $bp-h-ipad-vertical) {
+ } */
+
+//iphone
+$bp-w-iphone-vertical: 23.4375em;
+$bp-h-iphone-vertical: 41.6875em;
+$bp-w-iphone-horizontal: 41.6875em;
+$bp-h-iphone-horizontal: 23.4375em;
+/* @media screen and (max-width: $bp-w-iphone-vertical) and (max-height: $bp-h-iphone-vertical) {
+ } */
+
+//iphoneX
+$bp-w-iphoneX-vertical: 23.4375em;
+$bp-h-iphoneX-vertical: 50.75em;
+$bp-w-iphoneX-horizontal: 50.75em;
+$bp-h-iphoneX-horizontal: 23.4375em;
+/* @media screen and (max-width: $bp-w-iphoneX-vertical) and (max-height: $bp-h-iphoneX-vertical) {
+ } */
+
+//iphone6/7/8+
+$bp-w-iphoneplus-vertical: 25.875em;
+$bp-h-iphoneplus-vertical: 46em;
+$bp-w-iphoneplus-horizontal: 46em;
+$bp-h-iphoneplus-horizontal: 25.875em;
+/* @media screen and (max-width: $bp-w-iphoneplus-vertical) and (max-height: $bp-h-iphoneplus-vertical) {
+ } */

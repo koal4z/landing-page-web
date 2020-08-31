@@ -1,0 +1,149 @@
+.delicious {
+  background-color: $color-white-color;
+  padding: 20rem 9rem 10rem 12rem;
+  position: relative;
+  z-index: 16;
+
+  padding-top: 10rem;
+
+  &__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    @media screen and (max-width: $bp-small) {
+      flex-direction: column;
+    }
+
+    &--left {
+      padding-left: 15rem;
+      flex: 5 0 0;
+      display: flex;
+      flex-direction: column;
+      color: $color-primary-color;
+
+      @media screen and (max-width: $bp-medium-hd) and (max-height: $bp-h-large) {
+        padding-left: 5rem;
+      }
+
+      @media screen and (max-width: $bp-small) {
+        padding-left: 0rem;
+        text-align: center;
+      }
+
+      &-title {
+        text-transform: uppercase;
+        letter-spacing: 0.05rem;
+      }
+      &-text {
+        width: 65%;
+        margin: 3.5rem 0;
+        line-height: 150%;
+        @media screen and (max-width: $bp-large-hd) {
+          width: 90%;
+        }
+
+        @media screen and (max-width: $bp-small) {
+          width: 100%;
+        }
+      }
+      &-button {
+        background-color: $color-primary-color;
+        color: $color-white-color;
+        align-self: start;
+        position: relative;
+        z-index: 999;
+        @media screen and (max-width: $bp-small) {
+          align-self: center;
+        }
+      }
+    }
+    &--right {
+      flex: 5 0 0;
+
+      display: flex;
+      align-items: center;
+      height: fit-content;
+
+      @media screen and (max-width: $bp-large-hd) {
+        justify-content: center;
+      }
+
+      @media screen and (max-width: $bp-small) {
+        order: -1;
+      }
+
+      &-image {
+        width: 36rem;
+        border-radius: 100%;
+
+        @media screen and (max-width: $bp-medium) and (max-height: $bp-h-medium) {
+          width: 28rem;
+        }
+
+        @media screen and (max-width: $bp-medium) {
+          width: 28rem;
+        }
+
+        @media screen and (max-width: $bp-small) {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+.pic-3 {
+  background: url('../../images/background-prop-pic-5.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  top: 7rem;
+  left: 17.5%;
+
+  @media screen and (max-width: $bp-medium) {
+    left: 5.5%;
+  }
+  @media screen and (max-width: $bp-small) {
+    display: none;
+  }
+
+  @media screen and (max-width: $bp-w-ipad-horizontal) and (max-height: $bp-h-ipad-horizontal) {
+    top: 3rem;
+  }
+}
+
+.pic-4 {
+  background: url('../../images/background-prop-pic-2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -6rem;
+  left: 55%;
+  @media screen and (max-width: $bp-small) {
+    display: none;
+  }
+}
+.pic-5 {
+  background: url('../../images/background-prop-pic-6.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 10rem;
+  left: 80%;
+  @media screen and (max-width: $bp-small) {
+    display: none;
+  }
+
+  @media screen and (max-width: $bp-w-ipad-vertical) and (max-height: $bp-h-ipad-vertical) {
+    display: none;
+  }
+}
+.pic-6 {
+  background: url('../../images/background-prop-pic-1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 48rem;
+  left: 40%;
+  @media screen and (max-width: $bp-small) {
+    display: none;
+  }
+}

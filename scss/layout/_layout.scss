@@ -1,0 +1,134 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.background-image {
+  background: url('../../images/background-pic-2.webp');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: $color-primary-color;
+  background-blend-mode: multiply;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-bottom: 55rem;
+  z-index: 14;
+  object-fit: cover;
+
+  @media screen and (max-width: $bp-medium-hd) and (max-height: $bp-h-large) {
+    padding-bottom: 37rem;
+  }
+
+  @media screen and (max-width: $bp-w-ipad-vertical) and (max-height: $bp-h-ipad-vertical) {
+    background-position-x: 50%;
+    background-position-y: -30%;
+  }
+
+  @media screen and (max-width: 64rem) and (max-height: 85.375em) {
+    background-position-x: 50%;
+  }
+
+  @media screen and (max-width: $bp-w-iphone-horizontal) and (max-height: $bp-h-iphone-horizontal) {
+    background-position-y: 50%;
+  }
+
+  @media screen and (max-width: $bp-w-iphoneX-vertical) and (max-height: $bp-h-iphoneX-vertical) {
+    background-position-x: 70%;
+    padding-bottom: 25rem;
+  }
+}
+
+.header__content {
+  margin-top: 24rem;
+  margin-left: 9.6rem;
+  color: $color-white-color;
+
+  @media screen and (max-width: $bp-medium-hd) and (max-height: $bp-h-large) {
+    margin-top: 6rem;
+    margin-left: 7.5rem;
+  }
+  @media screen and (max-width: $bp-small) {
+    margin-top: 4rem;
+    margin-left: 5rem;
+  }
+
+  &--box {
+    width: 40%;
+
+    @media screen and (max-width: $bp-medium) and (max-height: $bp-h-medium) {
+      width: 60%;
+    }
+
+    @media screen and (max-width: $bp-medium) {
+      width: 60%;
+    }
+
+    @media screen and (max-width: $bp-w-iphone-vertical) and (max-height: $bp-h-iphone-vertical) {
+      width: 100%;
+    }
+    @media screen and (max-width: $bp-w-iphoneX-vertical) and (max-height: $bp-h-iphoneX-vertical) {
+      width: 100%;
+    }
+    @media screen and (max-width: $bp-w-iphoneplus-vertical) and (max-height: $bp-h-iphoneplus-vertical) {
+      width: 100%;
+    }
+  }
+  &--head {
+    width: 40%;
+    text-transform: uppercase;
+    font-size: 5.5rem;
+    margin-bottom: 4rem;
+
+    @media screen and (max-width: $bp-medium) and (max-height: $bp-h-medium) {
+      width: 70%;
+    }
+
+    @media screen and (max-width: $bp-medium) {
+      width: 70%;
+    }
+
+    @media screen and (max-width: $bp-w-iphone-horizontal) and (max-height: $bp-h-iphone-horizontal) {
+      margin-bottom: 2rem;
+    }
+  }
+  &--detail {
+    width: 90%;
+    line-height: 150%;
+    margin-bottom: 4rem;
+    hyphens: auto;
+
+    @media screen and (max-width: $bp-medium) and (max-height: $bp-h-medium) {
+      width: 50%;
+    }
+
+    @media screen and (max-width: $bp-small) {
+      width: 80%;
+    }
+  }
+  &--button {
+    margin-left: 0.5rem;
+    color: $color-primary-color;
+    background-color: $color-white-color;
+  }
+}
+
+.curve-1 {
+  background: url('../../images/svg/curve-1.svg');
+  object-fit: cover;
+  position: absolute;
+  z-index: 15;
+  width: 100%;
+  height: 60rem;
+  margin-top: -60rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  clip-path: polygon(0 30%, 100% 30%, 100% 100%, 0% 100%);
+
+  @media screen and (max-width: $bp-large) {
+    height: 45rem;
+    margin-top: -46rem;
+    background-size: cover;
+  }
+}

@@ -1,0 +1,91 @@
+.besttasty {
+  background-color: $color-white-color;
+  position: relative;
+  z-index: 15;
+  margin-top: -10rem;
+  padding: 8rem 9rem 0 9rem;
+  display: flex;
+  height: fit-content;
+
+  @media screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+
+  &__box {
+    &--left {
+      flex: 5 0 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: fit-content;
+
+      &-image {
+        width: 36rem;
+        border-radius: 100%;
+
+        @media screen and (max-width: $bp-medium) and (max-height: $bp-h-medium) {
+          width: 28rem;
+        }
+
+        @media screen and (max-width: $bp-small) {
+          margin-bottom: 2rem;
+        }
+
+        @media screen and (max-width: $bp-w-iphoneX-vertical) and (max-height: $bp-h-iphoneX-vertical) {
+          width: 28rem;
+        }
+      }
+    }
+
+    &--right {
+      flex: 5 0 0;
+      padding-left: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: $color-primary-color;
+
+      @media screen and (max-width: $bp-small) {
+        padding-left: 0;
+        text-align: center;
+      }
+
+      &-title {
+        text-transform: uppercase;
+        letter-spacing: 0.05rem;
+      }
+      &-text {
+        margin: 3.5rem 0;
+        line-height: 150%;
+        width: 70%;
+
+        @media screen and (max-width: $bp-medium-large) {
+          width: 100%;
+        }
+      }
+      &-button {
+        background-color: $color-primary-color;
+        color: $color-white-color;
+        align-self: start;
+
+        @media screen and (max-width: $bp-small) {
+          align-self: center;
+        }
+      }
+    }
+  }
+}
+
+.curve-2 {
+  background: url('../images/svg/curve-2.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  height: 32rem;
+  object-fit: cover;
+  width: 100%;
+  position: absolute;
+  z-index: 16;
+  margin-top: -11.4rem;
+}
