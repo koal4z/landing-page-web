@@ -1,3 +1,5 @@
 /node_modules
 unuse
 /pdf-resource
+/dist
+.cache
