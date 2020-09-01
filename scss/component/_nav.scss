@@ -62,5 +62,9 @@
   &__search {
     color: $color-white-color;
     font-size: 2rem;
+    padding: 1.2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 999;
   }
 }

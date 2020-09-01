@@ -7,6 +7,94 @@
 /* @media screen and (max-width: $bp-w-iphoneplus-vertical) and (max-height: $bp-h-iphoneplus-vertical) {
  } */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@keyframes logoIn {
+  0% {
+    opacity: 0;
+    transform: rotate(0) translate(-15rem, -15rem) rotate(0); }
+  45% {
+    transform: rotate(-45deg) translate(0, 0) rotate(45deg);
+    opacity: 1; }
+  65% {
+    transform: rotate(45deg) translate(4rem, -4rem) rotate(-45deg);
+    opacity: 1; }
+  100% {
+    transform: rotate(-45deg) translate(0, 0) rotate(45deg);
+    opacity: 1; } }
+
+.logo-animation {
+  animation-name: logoIn;
+  animation-duration: 0.95s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-direction: normal; }
+
+@keyframes textShowDown {
+  0% {
+    transform: translate(0, -10rem);
+    opacity: 0; }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1; } }
+
+.text-animation {
+  animation-name: textShowDown;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-direction: normal; }
+
+@keyframes opacityShow {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.opacity-animation {
+  animation-name: opacityShow;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-direction: normal; }
+
+@keyframes moveTopAndFadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0rem); }
+  20% {
+    opacity: 1;
+    transform: translateY(2rem); }
+  40% {
+    opacity: 1;
+    transform: translateY(0rem); }
+  100% {
+    opacity: 0;
+    transform: translateY(-15rem); } }
+
+.moveFadeOut-animation {
+  animation-name: moveTopAndFadeOut;
+  animation-duration: 0.6s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: normal; }
+
+@keyframes moveDownAndFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-15rem); }
+  80% {
+    opacity: 1;
+    transform: translateY(2rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem); } }
+
+.moveFadeIn-animation {
+  animation-name: moveDownAndFadeIn;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: normal; }
+
 * {
   margin: 0;
   padding: 0;
@@ -80,6 +168,23 @@ p {
     outline: none;
     border: none; }
 
+.input {
+  color: #7a7a7a;
+  letter-spacing: 0.05rem;
+  text-transform: capitalize;
+  background-color: #f0f0f0;
+  padding: 1.5rem 3.5rem 1.5rem 3.5rem;
+  border: none;
+  font-size: 2.2rem;
+  border-radius: 50px 0 0 50px;
+  width: 100%;
+  transform: translateX(5rem);
+  position: relative;
+  z-index: 25; }
+
+.input:focus {
+  outline: none; }
+
 .nav {
   width: 100%;
   height: 10.7rem;
@@ -128,7 +233,11 @@ p {
         color: white; }
   .nav__search {
     color: white;
-    font-size: 2rem; }
+    font-size: 2rem;
+    padding: 1.2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 999; }
 
 .container {
   width: 100%;
@@ -273,7 +382,7 @@ p {
         width: 0;
         height: 0; } }
   .bestseller:before {
-    background: url("../images/background-prop-pic-1.png");
+    background: url("../../images/background-prop-pic-1.png");
     background-repeat: no-repeat;
     left: 2%;
     top: 10rem; }
@@ -281,7 +390,7 @@ p {
       .bestseller:before {
         display: none; } }
   .bestseller:after {
-    background: url("../images/background-prop-pic-2.png");
+    background: url("../../images/background-prop-pic-2.png");
     background-repeat: no-repeat;
     left: 90%;
     top: 3rem; }
@@ -355,7 +464,7 @@ p {
         .bestseller__card--content {
           width: 60%; } }
 
-.besttasty {
+.best_tasty {
   background-color: white;
   position: relative;
   z-index: 15;
@@ -364,27 +473,27 @@ p {
   display: flex;
   height: fit-content; }
   @media screen and (max-width: 37.5em) {
-    .besttasty {
+    .best_tasty {
       flex-direction: column; } }
-  .besttasty__box--left {
+  .best_tasty__box--left {
     flex: 5 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: fit-content; }
-    .besttasty__box--left-image {
+    .best_tasty__box--left-image {
       width: 36rem;
       border-radius: 100%; }
       @media screen and (max-width: 50em) and (max-height: 37.5em) {
-        .besttasty__box--left-image {
+        .best_tasty__box--left-image {
           width: 28rem; } }
       @media screen and (max-width: 37.5em) {
-        .besttasty__box--left-image {
+        .best_tasty__box--left-image {
           margin-bottom: 2rem; } }
       @media screen and (max-width: 23.4375em) and (max-height: 50.75em) {
-        .besttasty__box--left-image {
+        .best_tasty__box--left-image {
           width: 28rem; } }
-  .besttasty__box--right {
+  .best_tasty__box--right {
     flex: 5 0 0;
     padding-left: 5rem;
     display: flex;
@@ -392,29 +501,29 @@ p {
     justify-content: center;
     color: #ff7f7f; }
     @media screen and (max-width: 37.5em) {
-      .besttasty__box--right {
+      .best_tasty__box--right {
         padding-left: 0;
         text-align: center; } }
-    .besttasty__box--right-title {
+    .best_tasty__box--right-title {
       text-transform: uppercase;
       letter-spacing: 0.05rem; }
-    .besttasty__box--right-text {
+    .best_tasty__box--right-text {
       margin: 3.5rem 0;
       line-height: 150%;
       width: 70%; }
       @media screen and (max-width: 56.25rem) {
-        .besttasty__box--right-text {
+        .best_tasty__box--right-text {
           width: 100%; } }
-    .besttasty__box--right-button {
+    .best_tasty__box--right-button {
       background-color: #ff7f7f;
       color: white;
       align-self: start; }
       @media screen and (max-width: 37.5em) {
-        .besttasty__box--right-button {
+        .best_tasty__box--right-button {
           align-self: center; } }
 
 .curve-2 {
-  background: url("../images/svg/curve-2.svg");
+  background: url("../../images/svg/curve-2.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -837,7 +946,9 @@ p {
       width: 20px;
       height: 20px;
       color: #111111;
-      text-align: center; }
+      display: flex;
+      justify-content: center;
+      align-items: center; }
     .footer__left--social-links:active, .footer__left--social-links:focus {
       text-decoration: none;
       color: white; }

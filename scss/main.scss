@@ -1,6 +1,7 @@
-@import './abstract/varibles';
+@import './abstract/variables';
 @import './abstract/functions';
 @import './abstract/mixins';
+@import './abstract/animations';
 
 @import './base/base';
 @import './base/font';
@@ -8,11 +9,12 @@
 
 @import './component/prop';
 @import './component/button';
+@import './component/input';
 @import './component/nav';
 
 @import './layout/layout';
 @import './layout/bestseller';
-@import './layout/besttasty';
+@import './layout/best_tasty';
 @import './layout/statistic';
 @import './layout/delicious';
 @import './layout/about';

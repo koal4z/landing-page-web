@@ -1,0 +1,118 @@
+@keyframes logoIn {
+  0% {
+    opacity: 0;
+    transform: rotate(0) translate(-15rem, -15rem) rotate(0);
+  }
+
+  45% {
+    transform: rotate(-45deg) translate(0, 0) rotate(45deg);
+    opacity: 1;
+  }
+
+  65% {
+    transform: rotate(45deg) translate(4rem, -4rem) rotate(-45deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(-45deg) translate(0, 0) rotate(45deg);
+    opacity: 1;
+  }
+}
+
+.logo-animation {
+  animation-name: logoIn;
+  animation-duration: 0.95s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+@keyframes textShowDown {
+  0% {
+    transform: translate(0, -10rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.text-animation {
+  animation-name: textShowDown;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+@keyframes opacityShow {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.opacity-animation {
+  animation-name: opacityShow;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+@keyframes moveTopAndFadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(2rem);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-15rem);
+  }
+}
+
+.moveFadeOut-animation {
+  animation-name: moveTopAndFadeOut;
+  animation-duration: 0.6s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+@keyframes moveDownAndFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-15rem);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+.moveFadeIn-animation {
+  animation-name: moveDownAndFadeIn;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}

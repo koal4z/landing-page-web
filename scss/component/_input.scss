@@ -1,0 +1,18 @@
+.input {
+  color: rgb(122, 122, 122);
+  letter-spacing: 0.05rem;
+  text-transform: capitalize;
+  background-color: rgb(240, 240, 240);
+  padding: 1.5rem 3.5rem 1.5rem 3.5rem;
+  border: none;
+  font-size: 2.2rem;
+  border-radius: 50px 0 0 50px;
+  width: 100%;
+  transform: translateX(5rem);
+  position: relative;
+  z-index: 25;
+}
+
+.input:focus {
+  outline: none;
+}
