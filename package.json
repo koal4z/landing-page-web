@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass scss/main.scss css/style.css -w",
+    "watch:sass": "node-sass scss/main.scss src/css/style.css -w",
     "dev": "live-server",
-    "build": "parcel build css/style.css",
+    "build:css": "parcel build src/css/style.css",
+    "build:html": "parcel build src/index.html",
+    "build:js": "parcel build src/index.js",
     "cleanup": "rm -rf .cache dist",
-    "new-build": "npm-run-all cleanup build"
+    "new-build": "npm-run-all cleanup build:html build:js build:css"
   },
   "author": "",
   "license": "ISC",
