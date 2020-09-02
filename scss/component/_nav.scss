@@ -10,7 +10,7 @@
 
   @media screen and (max-width: $bp-medium) {
     align-items: flex-start;
-    padding-top: 3rem;
+    padding-top: 1.5rem;
   }
 
   &__logo {
@@ -78,9 +78,7 @@
       @media screen and (max-width: $bp-medium) {
         display: block;
         order: -1;
-        margin-bottom: 4.5rem;
-        margin-right: 2rem;
-        margin-left: auto;
+        margin: 1.5rem 2rem 4.5rem auto;
       }
 
       @media screen and (max-width: $bp-w-iphone-vertical) and (max-height: $bp-h-iphone-vertical) {
@@ -115,20 +113,17 @@
     &--items {
       width: 100%;
       height: max-content;
-      padding: 1rem 1.8rem;
-
-      @media screen and (max-width: $bp-medium) {
-        display: table;
-        padding: 0;
-      }
+      display: table;
+      padding: 0;
     }
 
     &--links {
       color: $color-white-color;
       text-decoration: none;
+      display: table-cell;
+      padding: 1rem 1.8rem;
 
       @media screen and (max-width: $bp-medium) {
-        display: table-cell;
         padding: 2rem 1.8rem;
       }
 
@@ -144,6 +139,10 @@
     cursor: pointer;
     position: relative;
     z-index: 999;
+
+    @media screen and (max-width: $bp-medium) {
+      margin-top: 1.5rem;
+    }
   }
 }
 

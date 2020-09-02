@@ -85,6 +85,7 @@ function handlerHideInput() {
   const searchInputEl = document.querySelector('.nav__search--input')
   setStyle(searchEl.querySelector('i'), 'color', '#FFFFFF')
   setStyle(searchEl.querySelector('i'), 'transform', 'scale(1)')
+  setStyle(searchEl, 'padding-top', '0')
   searchInputEl.remove()
 }
 
@@ -92,6 +93,7 @@ function handlerShowInput() {
   const searchInputEl = document.querySelector('.nav__search--input')
   setStyle(searchEl.querySelector('i'), 'transform', 'scale(1.2)')
   setStyle(searchEl.querySelector('i'), 'color', 'rgb(255, 127, 127)')
+  setStyle(searchEl, 'padding-top', '1.2rem')
   if (!searchInputEl) {
     setTimeout(() => {
       searchEl.insertAdjacentHTML(
