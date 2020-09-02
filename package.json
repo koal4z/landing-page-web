@@ -6,15 +6,20 @@
   "scripts": {
     "watch:sass": "node-sass scss/main.scss src/css/style.css -w",
     "dev": "live-server",
+    "parcel": "parcel src/index.html",
+    "build:babel": "babel src -d lib",
     "build:css": "parcel build src/css/style.css",
-    "build:html": "parcel build src/index.html",
-    "build:js": "parcel build src/index.js",
+    "build:html": "parcel build src/index.html --public-url /",
+    "build:js": "parcel build lib/index.js",
     "cleanup": "rm -rf .cache dist",
     "new-build": "npm-run-all cleanup build:html build:js build:css"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.11.5",
+    "@babel/core": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
     "eslint": "^7.2.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.21.2",
