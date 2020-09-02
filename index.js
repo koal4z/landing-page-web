@@ -120,3 +120,11 @@ function handlerNavBox() {
 searchEl.addEventListener('click', () => {
   handlerNavBox()
 })
+
+const navHamburger = document.querySelector('.nav__menu--hamburger')
+const navMenuBoxEl = document.querySelector('.nav__menu--box')
+function handlerHamburger() {
+  navHamburger.classList.toggle('active')
+  navMenuBoxEl.classList.toggle('active-bar')
+}
+navHamburger.addEventListener('click', handlerHamburger)
