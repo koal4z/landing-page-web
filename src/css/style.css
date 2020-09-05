@@ -274,11 +274,12 @@ p {
           margin-top: 0; }
         .nav__menu--hamburger-line:last-child {
           margin-bottom: 0; }
-    .nav__menu--items {
-      width: 100%;
-      height: max-content;
-      display: table;
-      padding: 0; }
+    @media screen and (max-width: 50em) {
+      .nav__menu--items {
+        width: 100%;
+        height: max-content;
+        display: table;
+        padding: 0; } }
     .nav__menu--links {
       color: white;
       text-decoration: none;
